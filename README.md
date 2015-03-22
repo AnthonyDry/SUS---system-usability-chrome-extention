@@ -1,5 +1,8 @@
 # SUS---system-usability-chrome-extention
 A quick and dirty user evaluation. for google chrome
+
+![My image](/src/screenshot-sus.png)
+
 ##How to install extention
 These instructions are copied from [Getting Started: Building a Chrome Extension](https://developer.chrome.com/extensions/getstarted#unpacked)
 
