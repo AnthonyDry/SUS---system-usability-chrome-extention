@@ -1,0 +1,28 @@
+{
+  "manifest_version": 2,
+  "name": " Quick system usability scale",
+  "version": "1.0",
+  "description": "Quick SUS evaluations for testing your sites and prototypes",
+  "content_scripts": [
+    {
+      // Change 'matches' attribute to load content
+      // script only in pages you want to.
+      "matches": ["<all_urls>"],
+      "css": ["sus-style.css"],
+      "js":["jquery-min.js", "script.js"]
+    }
+  ],
+  "background": {
+    "scripts": ["popup.js"]
+  },
+  "permissions": [
+    "tabs", "http://*/*", "https://*/*"
+  ],
+  "browser_action": {
+    "default_icon": "icon.png"
+  },
+  "icons": { "16": "icon16.png",
+           "48": "icon48.png",
+          "128": "icon128.png" },
+  "web_accessible_resources": ["src/SUS.png", "src/dryfrost.png"]
+}
